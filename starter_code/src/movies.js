@@ -5,14 +5,19 @@
 
 // Iteration 1: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(anArray){
-    return anArray.sort()
+    return anArray.sort(function(a , b){a-b})
 }
 
-movies.year.sort();
+movies.sort(anArray);
 
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct
+function howManyMovies(array){
+    return array >= movies.filter("checkSteven").value
+}
 
-
+function myFunction(){
+    movies.director.drama() = array.filter(checkSteven)
+}
 
 // Iteration 3: Alphabetic Order - Order by title and print the first 20 titles
 
